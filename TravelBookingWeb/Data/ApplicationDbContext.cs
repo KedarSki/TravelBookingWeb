@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TravelBookingWeb.Models;
 
 namespace TravelBookingWeb.Data
 {
@@ -12,5 +13,6 @@ namespace TravelBookingWeb.Data
             : base(options)
         {
         }
+        public DbSet<TravelBookingWeb.Models.Travel> Travel { get; set; }
     }
 }
