@@ -4,36 +4,49 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>Travel</h4>
+<h4>Book Travel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="TravelFrom" class="control-label"></label>
+                <label asp-for="TravelFrom" class="control-label">Travel From</label>
                 <input asp-for="TravelFrom" class="form-control" />
                 <span asp-validation-for="TravelFrom" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TravelTo" class="control-label"></label>
+                <label asp-for="TravelTo" class="control-label">Travel To</label>
                 <input asp-for="TravelTo" class="form-control" />
                 <span asp-validation-for="TravelTo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DateFrom" class="control-label"></label>
+                <label asp-for="DateFrom" class="control-label">Date From</label>
                 <input asp-for="DateFrom" class="form-control" />
                 <span asp-validation-for="DateFrom" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DateTo" class="control-label"></label>
+                <label asp-for="DateTo" class="control-label">Date To</label>
                 <input asp-for="DateTo" class="form-control" />
                 <span asp-validation-for="DateTo" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="People" class="control-label">Number of People</label>
+                <input asp-for="People" class="form-control" />
+                <span asp-validation-for="TravelTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TravelTo" class="control-label">All travels costs $100 per one person</label>
+
+
+            </div>
+            <button class="btn btn-primary"> Calculate a Total Price</button>
+
+            <div class="form-group">
+
+                <input type="submit" value="Book Your Travel" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -46,3 +59,4 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+        

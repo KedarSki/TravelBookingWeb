@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,12 +21,14 @@ namespace TravelBookingWeb.Controllers
         }
 
         // GET: Travels
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Travel.ToListAsync());
         }
 
         // GET: Travels/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,8 +47,10 @@ namespace TravelBookingWeb.Controllers
         }
 
         // GET: Travels/Create
+        [Authorize]
         public IActionResult Create()
         {
+            
             return View();
         }
 
@@ -56,16 +61,22 @@ namespace TravelBookingWeb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,TravelFrom,TravelTo,DateFrom,DateTo")] Travel travel)
         {
+
+
             if (ModelState.IsValid)
             {
                 _context.Add(travel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+
+
             return View(travel);
         }
 
         // GET: Travels/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

@@ -60,7 +60,6 @@ C:\Git\TravelBookingWeb\TravelBookingWeb\bin\Debug\netcoreapp3.1\runtimes\win-x8
 C:\Git\TravelBookingWeb\TravelBookingWeb\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Git\TravelBookingWeb\TravelBookingWeb\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Git\TravelBookingWeb\TravelBookingWeb\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\TravelBookingWeb.csproj.AssemblyReference.cache
 C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\TravelBookingWeb.AssemblyInfoInputs.cache
 C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\TravelBookingWeb.AssemblyInfo.cs
 C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\TravelBookingWeb.csproj.CoreCompileInputs.cache
@@ -167,3 +166,4 @@ C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\Razor\Views\Tra
 C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\Razor\Views\Travels\Details.cshtml.g.cs
 C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\Razor\Views\Travels\Edit.cshtml.g.cs
 C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\Razor\Views\Travels\Index.cshtml.g.cs
+C:\Git\TravelBookingWeb\TravelBookingWeb\obj\Debug\netcoreapp3.1\TravelBookingWeb.csproj.AssemblyReference.cache
